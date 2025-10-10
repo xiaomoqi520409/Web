@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>第一个表单</title>
+  </head>
+  <body>
+    <table border="0" align="center">
+      <form method="get" action="/submit-form" target="_blank">
+        <tr>
+          <td>
+            用户名:
+            <td><input
+              type="text"
+              name="user"
+              id="user"
+              value="xiaomoqi"
+              size="30"
+              maxlength="10"
+              required
+              readonly
+            /></td>
+            
+          </td>
+        </tr>
+        <tr>
+          <td>密码:</td>
+            <td><input
+              type="password"
+              name="password"
+              value="123456"
+              disabled
+            /></td>
+        </tr>
+        <br />
+        <tr>
+          <td>隐藏域:<input type="hidden" name="hidden" value="food" /></td>
+        </tr>
+        <tr>
+            <td><label for="message">留言:</label></td>
+            <td>
+            <textarea name="message" cols="40" rows="10" id="message">
+            这是一个留言板</textarea
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>性别:</td>
+          <td>
+            <input type="radio" name="gender" value="female" checked /> 女
+            <input type="radio" name="gender" value="male" /> 男 <br />
+          </td>
+        </tr>
+        <tr>
+          <td>爱好:</td>
+          <td>
+            
+            <input type="checkbox" name="hobby" value="sing" checked />唱
+            <input type="checkbox" name="hobby" value="jump" checked />跳
+            <input type="checkbox" name="hobby" value="rap" checked /> rap
+            <input type="checkbox" name="hobby" value="sport" checked />篮球
+            <input type="checkbox" name="hobby" value="music" checked />music
+          </td>
+        </tr>
+        <tr>
+          <td>专业:</td>
+          <td>
+            
+            <select name="major" size="3" multiple>
+              <optgroup label="特色专业">
+                <option value="soft">软工</option>
+                <option value="science" selected>计科</option>
+              </optgroup>
+              <optgroup label="新上专业">
+                <option value="ai">人工智能</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>文件上传域:</td>
+          <td><input type="file" name="f1" /> <br /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <fieldset>
+              <legend>按钮类控件</legend>
+              <input type="submit" value="新用户注册" />
+              <input type="reset" value="清空" />
+              <input
+                type="button"
+                value="普通按钮"
+                onclick="alert('这是一个普通按钮');"
+              />
+              <br />
+              <button type="submit"><b>登录</b></button>
+              <button type="reset"><img src="image.jpg" width="50" /></button>
+              <button type="button">普通按钮</button>
+              <br />
+              <input type="image" src="image.jpg" width="50" />
+              <label
+                >留言:
+                <textarea name="message" cols="40" rows="10">
+            这是一个留言板</textarea
+                >
+              </label>
+            </fieldset>
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
