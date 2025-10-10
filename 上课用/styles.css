@@ -1,0 +1,26 @@
+body{
+    background-image: url("image.jpg");
+}
+
+h1,h2,blockquote,pre,p,.special{
+    color:white;
+}
+
+a:hover{
+    color:chartreuse;
+}
+a:link{
+    color:pink;
+}
+
+h1,
+.special{
+    color:blue;
+}
+
+#Mailing_adress{
+    color:aqua;
+}
+a[title]{
+    color:aqua;
+}
