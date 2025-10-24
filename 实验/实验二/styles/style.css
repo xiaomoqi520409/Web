@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+#outer{
+	width:800px;
+	height:640px;
+	}
+	
+#inner_a{
+	background-image:url(Web7-1/images/1.jpg);
+	height:150px;
+	line-height:150px;
+	text-align:center;
+	}
+
+#inner_a_a{
+	text-align:left;
+	}
+	
+#inner_b{
+	height:40px;
+	line-height:40px;
+	display:flex;
+	gap:20px;
+
+	}
+a{
+	text-align:center;
+	}

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>实验一</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <table
@@ -70,23 +69,30 @@
           </table>
         </td>
         <td>
-          <h2>无序列表——定义列表的元素</h2>
-          <ul type="square">
-            <li>ul元素</li>
-            <li>ol元素</li>
-            <li>li元素</li>
-            <li>dl元素</li>
-            <li>dt元素</li>
-            <li>dd元素</li>
-          </ul>
-          <h2>有序列表——学过的Web元素</h2>
-          <ol start="2">
-            <li>form元素</li>
-            <li>table元素</li>
-            <li>img元素</li>
-            <li>a元素</li>
-            <li>p元素</li>
-          </ol>
+          <table border="0">
+            <tr class="top">
+              <td class="top"><h2>超链接示例</h2></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.lyu.edu.cn/main.htm">访问临沂大学主页</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.lyu.edu.cn/main.htm" target="_blank"
+                  >访在新网页中打开临沂大学主页</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><img src="images/image.gif" usemap="#element" /></td>
+            </tr>
+            <map name="element">
+              <area shape="circle" coords="200,160,60" href="image.html" />
+              <area shape="circle" coords="220,160,200" href="text.html" />
+            </map>
+          </table>
         </td>
       </tr>
       <tr height="40px" style="background-color: rgba(230, 242, 255)">

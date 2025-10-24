@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>实验一</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <table
@@ -70,29 +69,27 @@
           </table>
         </td>
         <td>
-          <table border="0">
-            <tr class="top">
-              <td class="top"><h2>超链接示例</h2></td>
+          <h2>显示表格</h2>
+          <table border="1" width="400px">
+            <tr>
+                <td>标签</td><td>作用</td><td>备注</td>
             </tr>
             <tr>
-              <td>
-                <a href="https://www.lyu.edu.cn/main.htm">访问临沂大学主页</a>
-              </td>
+                <td>&lt;table&gt;</td>
+                <td>定义一个表格</td>
+                <td rowspan="3">有单独的结束标签</td>
             </tr>
             <tr>
-              <td>
-                <a href="https://www.lyu.edu.cn/main.htm" target="_blank"
-                  >访在新网页中打开临沂大学主页</a
-                >
-              </td>
+                <td>&lt;tr&gt;</td>
+                <td>定义列表的行标签</td>
             </tr>
             <tr>
-              <td><img src="images/image.gif" usemap="#element" /></td>
+                <td>&lt;td&gt;</td>
+                <td>定义列表的列标签</td>
             </tr>
-            <map name="element">
-              <area shape="circle" coords="200,160,60" href="image.html" />
-              <area shape="circle" coords="220,160,200" href="text.html" />
-            </map>
+            <tr>
+                <td colspan="3">以上是定义表格的基本标签</td>
+            </tr>
           </table>
         </td>
       </tr>
