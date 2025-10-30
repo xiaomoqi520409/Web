@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的待办事项</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1>我的待办事项</h1>
+            <div class="stats">
+                <span id="taskCount">0 个任务</span>
+            </div>
+        </header>
+        
+        <main class="app-main">
+            <section class="input-section">
+                <form id="taskForm">
+                    <input 
+                        type="text" 
+                        id="taskInput" 
+                        placeholder="添加新任务..." 
+                        required
+                        maxlength="100"
+                    >
+                    <button type="submit" id="addTaskBtn">添加</button>
+                </form>
+            </section>
+            
+            <section class="filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="active">进行中</button>
+                <button class="filter-btn" data-filter="completed">已完成</button>
+            </section>
+            
+            <section class="tasks-section">
+                <ul id="taskList" class="task-list">
+                    <!-- 任务将动态添加到这里 -->
+                </ul>
+            </section>
+        </main>
+        
+        <footer class="app-footer">
+            <p>© 2023 我的待办事项</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
